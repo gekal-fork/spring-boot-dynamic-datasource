@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cxs.mapper.ProductMapper">
+
+    <resultMap id="BaseResultMap" type="com.cxs.model.Product">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="productName" column="product_name" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,product_name,price
+    </sql>
+</mapper>

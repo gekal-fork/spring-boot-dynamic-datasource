@@ -1,0 +1,15 @@
+server:
+  port: 2022
+spring:
+  datasource-master:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.10.10.10/spring-boot-dynamic-datasource-demo?characterEncoding=utf8&useSSL=false
+    username: dynamic-datasource-user
+    password: "@Aa1234567890"
+  datasource-slave:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.10.10.20/spring-boot-dynamic-datasource-demo?characterEncoding=utf8&useSSL=false
+    username: dynamic-datasource-user
+    password: "@Aa1234567890"
